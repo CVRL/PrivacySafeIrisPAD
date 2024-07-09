@@ -1,5 +1,5 @@
 
-# Privacy-Safe Iris Presentation Attack Detection (IJCB) 2024
+# <center> Privacy-Safe Iris Presentation Attack Detection (IJCB) 2024 </center>
 
 ![pipiline](https://github.com/CVRL/PrivacySafeIrisPAD/blob/main/pipiline.png)
 
