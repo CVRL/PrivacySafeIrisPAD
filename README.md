@@ -14,9 +14,11 @@ This paper proposed the framework in which exclusively synthetically-generated i
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
 # Requirement
-Pytorch, Numpy, Scipy, Pillow
+To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
 
 ```conda create —name dNetPAD```
+
+```conda activate dNetPAD```
 
 ```conda install pytorch torchvision -c pytorch```
 
@@ -26,7 +28,6 @@ Pytorch, Numpy, Scipy, Pillow
 
 ```conda install -c anaconda pillow``` 
 
-```conda activate dNetPAD```
 
 # Training
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
