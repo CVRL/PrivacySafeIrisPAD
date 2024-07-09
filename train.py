@@ -105,7 +105,7 @@ criterion = nn.CrossEntropyLoss()
 ##################################################################
 ############### Dataloader for train and test data ###############
 ##################################################################
-all_classes = ['real','fake']
+all_classes = ['notcl','tcl']
 class_assgn = {c: i for i, c in enumerate(all_classes)}
 
 dataseta = datasetLoader(args.csvPath, args.datasetPath, args.method, train_test='train', c2i=class_assgn) 
