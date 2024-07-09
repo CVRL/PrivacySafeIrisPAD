@@ -17,10 +17,15 @@ The code processes cropped iris images both with and without contact lenses as i
 Pytorch, Numpy, Scipy, Pillow
 
 ```conda create —name dNetPAD```
+
 ```conda install pytorch torchvision -c pytorch```
+
 ```conda install -c anaconda numpy``` 
+
 ```conda install -c anaconda scipy```
+
 ```conda install -c anaconda pillow``` 
+
 ```conda activate dNetPAD```
 
 # Training
