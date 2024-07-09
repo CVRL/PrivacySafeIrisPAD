@@ -3,12 +3,28 @@
 
 ![pipiline](https://github.com/CVRL/PrivacySafeIrisPAD/blob/main/pipiline.png)
 
-This paper proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid ``identity leakage,'' the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
+# Abstract
 
-# Conclusion
+This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid ``identity leakage,'' the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
+
+# Data Used
+
+# Generating Synthetic Iris Samples
+
+“Authentic TCL” and “Authentic noTCL” collections were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step
+3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. Fo each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2] (https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
+
 
 This paper proposed the framework in which exclusively synthetically-generated iris images were used to build the entire iris PAD method detecting textured contact lenses. This study demonstrates that it is possible to train effective iris PAD models without using any authentic data, collected from human subjects. To achieve this goal we trained unconditional generative models synthesizing iris images without contact lenses, and conditional generative models synthesizing images of irises wearing contact lenses offered by seven different manufacturers. By applying an ``identity leakage'' mitigation mechanism in the pipeline, the proposed framework offers an advantage of reducing privacy concerns associated with using iris data from authentic subjects. As a result, we obtained privacy-safe iris PAD methods that perform comparably well when tested on all the existing benchmarks offering iris images with and without textured contact lenses (benchmarks used in models training were excluded from testing to avoid bias).
 
+
+# Experiment 
+To evaluate a potential gap between the performance of the iris PAD methods trained traditionally (with authentic samples) and trained solely with synthetic samples, we designed two experiments:
+
+\begin{enumerate}
+    \item[{\bf E1:}] the iris PAD models were {\bf trained exclusively on synthetic data}, as described in Sec. \ref{sec:step3}, and {\bf tested on iris PAD benchmarks},
+    \item[{\bf E2:}] the iris PAD models were {\bf trained solely on authentic data} (including images of irises with and without textured contact lenses), and {\bf tested on the iris PAD benchmarks}; to ensure fair comparisons, we sampled 4,167 authentic iris images without textured contact lenses (noTCL), and 4,167 authentic iris images with textured contact (TCL) for training, representing all identities whose data was used also for training generative models in Step 1. 
+\end{enumerate}
 
 
 # Description on how to use the code
