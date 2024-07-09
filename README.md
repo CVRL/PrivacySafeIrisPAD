@@ -20,7 +20,7 @@ All of authentic TCL and noTCL samples were adopted from repository published by
 To evaluate a potential gap between the performance of the iris PAD methods trained traditionally (with authentic samples) and trained solely with synthetic samples, we designed two experiments:
 
 * 1. First Experment: *  the iris PAD models were trained exclusively on synthetic data and tested on iris PAD benchmarks.
-* 2. Second Experment:*  the iris PAD models were trained solely on authentic data (including images of irises with and without textured contact lenses), and tested on the iris PAD benchmarks; to ensure fair comparisons.
+* 2. Second Experment: *  the iris PAD models were trained solely on authentic data (including images of irises with and without textured contact lenses), and tested on the iris PAD benchmarks; to ensure fair comparisons.
 
 
 # Description on how to use the code
