@@ -10,7 +10,7 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 # Data Used for the Proposed Pipeline
 All of authentic TCL and noTCL samples for training the StyleGAN models were adopted from repositories published by the University of Notre Dame respectively from *ND3D* and *ND Cosmetic Contacts* and *BXGRID* datasets.
 
-Please refer to Table 1 for more information on train and test datasets.
+Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
 # Generating Synthetic Iris Samples
 
