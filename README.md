@@ -19,7 +19,8 @@ After training the model, select the one with the highest accuracy on the valida
 A CSV file containing PA scores will be generated in the same folder as the images.
 
 ___________________________________________________________________________________________
-**Note:** To preserve anonymity during the review phase, instructions on how to obtain model weights and copy of the generated datasets will be added upon acceptance of the paper.
+**Note:** nstructions of how to request a copy of the dataset can be found
+at [dataset] (https://cvrl.nd.edu/projects/data/). 
 
 
 The code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
