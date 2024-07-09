@@ -16,14 +16,14 @@ All of authentic TCL and noTCL samples were adopted from repository published by
 3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. Fo each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2] (https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
 
 
-# Experiment 
+# Experiments 
 To evaluate a potential gap between the performance of the iris PAD methods trained traditionally (with authentic samples) and trained solely with synthetic samples, we designed two experiments:
 
  1. First Experment:  the iris PAD models were trained exclusively on synthetic data and tested on iris PAD benchmarks.
  2. Second Experment:   the iris PAD models were trained solely on authentic data (including images of irises with and without textured contact lenses), and tested on the iris PAD benchmarks; to ensure fair comparisons.
 
 
-# Description on how to use the code
+# Description on How to Use PAD Code
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
