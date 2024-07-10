@@ -21,7 +21,7 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
-# Requirement
+## Requirement
 To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
 
 ```conda create —name dNetPAD```
@@ -37,7 +37,7 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 ```conda install -c anaconda pillow``` 
 
 
-# Training
+## Training
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
 
 The format of the dataset CSV file is as below:
@@ -46,7 +46,7 @@ The format of the dataset CSV file is as below:
 <br>test,notcl,image3.png
 <br>test,tcl,image4.png
 
-# Testing
+## Testing
 After training the model, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
