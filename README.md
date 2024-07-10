@@ -9,22 +9,12 @@ Figure 1: Overview of the pipeline of privacy-safe, synthetic data-only iris pre
 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid ``identity leakage,'' the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 
-# Data Used for the Proposed Pipeline
-All of authentic TCL and noTCL samples for training the StyleGAN models were adopted from repositories published by the University of Notre Dame respectively from *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets.
-
-Please refer to Table 1, cited in the paper, for more information on train and test datasets.
-
 # Generating Synthetic Iris Samples
 
-“Authentic TCL” and “Authentic noTCL” collections were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step
-3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. Fo each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2] (https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
+“Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step
+3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. For each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2] (https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
 
-
-# Experiments 
-To evaluate a potential gap between the performance of the iris PAD methods trained traditionally (with authentic samples) and trained solely with synthetic samples, we designed two experiments:
-
- 1. First Experment: the iris PAD models were trained solely on synthetic data and tested on iris PAD benchmarks.
- 2. Second Experment: the iris PAD models were trained solely on authentic data (including images of irises with and without textured contact lenses), and tested on the iris PAD benchmarks; to ensure fair comparisons.
+Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
 
 # Description on How to Use PAD Code
