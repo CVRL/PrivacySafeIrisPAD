@@ -54,7 +54,7 @@ After training the model, select the one with the highest accuracy on the valida
 A CSV file containing PA scores will be generated in the same folder as the images.
 
 ___________________________________________________________________________________________
-**Note:** Instructions of how to request a copy of the dataset can be found at [dataset](https://cvrl.nd.edu/projects/data/). 
+**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://cvrl.nd.edu/projects/data/). 
 
 
-The code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
+The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
