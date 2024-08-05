@@ -11,6 +11,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
    * [Weight Acquisition](#gan-weights)
    * [Synthetic Samples Acquisition](#gan-samples)
+ 
+* [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+
 * [Training GAN Models on the Authentic Iris Samples](#gan-training)
 
 * [Training and Evaluating PAD Models](#pad-tarining)
@@ -44,6 +47,10 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 
 <a name="gan-samples"/></a>
 ### Synthetic Samples Acquisition
+
+<a name="gan-synthesizing"/></a>
+## Step2: Image Synthesis and Identity Leakage Mitigation]
+
 
 <a name="pad-tarining"/></a>
 ## Training and Evaluating PAD Models
