@@ -79,7 +79,7 @@ The format of the dataset CSV file is as below:
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
-**Note** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
+**Note:** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
 
 <a name="requirements"/></a>
 ### Environments Requirements
@@ -105,7 +105,7 @@ To test your data on our pre-trained PAD model, first download the models from [
 
 After downloading the trained models, run the code below on your dataset to evaluate the models' performance on unseen data.
 
-```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
+```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"```
 
 A CSV file containing PA scores will be generated in the same folder as the images.
 
