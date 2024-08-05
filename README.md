@@ -9,8 +9,8 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Codes of Unconditional and Conditional StyleGAN models](#gan-code)
-* [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
 * [Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+    * [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
     * [Obtaining Synthetic Iris Images Used in this paper](#samples)
@@ -34,10 +34,11 @@ We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris 
 
 The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
 
-<a name="data-prpration"/></a>
-### Data Prepration
+___________________________________________________________________________________________
 
-We organized iris samples from seven different contact lens brands into separate folders labeled from 1 to 7, representing seven brands. Then, we ran [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py) to prepare a zip file containing the TCL samples for the conditional GAN model's training set..
+
+<a name="gan-synthesizing"/></a>
+## Image Synthesis and Identity Leakage Mitigation
 
 <a name="gan-weights"/></a>
 ## Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
@@ -47,12 +48,6 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
-___________________________________________________________________________________________
-
-<a name="gan-synthesizing"/></a>
-## Image Synthesis and Identity Leakage Mitigation
-
-
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
