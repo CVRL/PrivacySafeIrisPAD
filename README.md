@@ -6,11 +6,21 @@ Official GitHub repository of the paper: Mahsa Mitcheff, Patrick Tinsley, and Ad
 
 Overview of the pipeline of privacy-safe, synthetic data-only iris presentation attack detection (PAD) training and validation. TCL and noTCL denote images of irises with and without contact lenses, respectively. After training generative models *Step 1*, we exclusively use synthetically-generated data (mimicking irises both with and without textured contact lenses) to train iris PAD as usual (*Step 3*). The iris matcher is used (in *Step 2*) to exclude synthetic samples that are too close to non-synthetic samples used for generative models training, which prevents the leakage of identity information from the training set into the generated samples. Resulting iris PAD methods are tested on regular (non-synthetic) data composed of bona fide and fake samples (*Step 4*).
 
-# Abstract
+## Table of contents
+* [Abstract](#abstract)
+* [Training GAN Models and Generating Synthetic Iris Samples](#gan-training)
+* [Training and Evaluating PAD Models](#pad-tarining)
+    * [Requirements](#requirements)
+* [Citation](#citation)
+* [Acknowledgment](#acknowledgment)
+
+<a name="abstract"/></a>
+## Abstract
 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid ``identity leakage,'' the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 
-# Generating Synthetic Iris Samples
+<a name="gan-training"/></a>
+# Training GAN Models and Generating Synthetic Iris Samples
 
 “Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step
 3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. For each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
@@ -18,11 +28,15 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
 **Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
-# Description on How to Use PAD Code
+
+<a name="pad-tarining"/></a>
+## Training and Evaluating PAD Models
+### Description on How to Use PAD Code
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
-## Requirement
+<a name="requirements"/></a>
+### Requirements
 To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
 
 ```conda create —name dNetPAD```
@@ -57,6 +71,15 @@ After training the models, select the one with the highest accuracy on the valid
 
 A CSV file containing PA scores will be generated in the same folder as the images.
 
+
+<a name="citation"/></a>
+### Citation
+
+Research paper summarizing the paper:
+
+
+<a name="acknowledgment"/></a>
+### Acknowledgment
 ___________________________________________________________________________________________
 
 
