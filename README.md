@@ -9,8 +9,11 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Training GAN Models and Generating Synthetic Iris Samples](#gan-training)
+   * [Weight Acquisition](#gan-weights)
+   * [Synthetic Samples Acquisition](#gan-samples)
 * [Training and Evaluating PAD Models](#pad-tarining)
-    * [Requirements](#requirements)
+   * * [Weight Acquisition](#PAD-weights)
+    * [Environments Requirements](#requirements)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
@@ -28,6 +31,12 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
 **Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+
+<a name="gan-weights"/></a>
+### Weight Acquisition
+
+<a name="gan-samples"/></a>
+### Synthetic Samples Acquisition
 
 <a name="pad-tarining"/></a>
 ## Training and Evaluating PAD Models
