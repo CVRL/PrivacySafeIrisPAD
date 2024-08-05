@@ -41,7 +41,7 @@ ________________________________________________________________________________
 ## Image Synthesis and Identity Leakage Mitigation
 
 <a name="gan-weights"/></a>
-## Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
+### Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
 
@@ -51,8 +51,12 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
-Run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-AD](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main)
+After downloading the weight, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-AD](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
+For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
+
+```python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1``` 
+  
 <a name="id-leakage"/></a>
 ### Identity Leakage Mitigation
 Neurotechnology’s VeriEye SDK [VeriEye](https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
