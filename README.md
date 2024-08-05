@@ -9,7 +9,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
-   * [Data Prepration](#data-prpration)
+   <!---* [Data Prepration](#data-prpration)--->
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
@@ -28,8 +28,7 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 <a name="gan-training"/></a>
 ## Step1: Training GAN Models on the Authentic Iris Samples
 
-“Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step
-3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. For each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
+“Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, were used to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step 3), respectively. We employed a class-conditional Style-GAN2 model to generate Synthetic TCL iris samples. For each textured contact lens brand, we defined a separate class. Synthetic noTCL iris images were generated using an unconditional StyleGAN2 model. The training code was adopted from the NVIDIA repository [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file), specifically using the StyleGAN2 and StyleGAN2-ADA configurations. 
 
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
