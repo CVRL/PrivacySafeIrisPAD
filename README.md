@@ -20,12 +20,12 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Acknowledgment](#acknowledgment)
 
 <a name="abstract"/></a>
-## Abstract
+### Abstract
 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid *identity leakage*, the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 
 <a name="gan-code"/></a>
-## Source Codes of Unconditional and Conditional StyleGAN model
+### Source Codes of Unconditional and Conditional StyleGAN model
 
 We used “Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step 3), respectively. 
 
@@ -37,10 +37,10 @@ ________________________________________________________________________________
 
 
 <a name="gan-synthesizing"/></a>
-## Steps for Image Synthesis
+### Steps for Image Synthesis
 
 <a name="gan-weights"/></a>
-### Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
+#### Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
 
@@ -49,7 +49,7 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
-### Generating Samples
+#### Generating Samples
 After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
 For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
@@ -59,13 +59,13 @@ For example, to generate samples from the first class condition of TCL irises, u
 ___________________________________________________________________________________________
 
 <a name="samples"/></a>
-## Obtaining Synthetic Iris Images Used in this paper
+### Obtaining Synthetic Iris Images Used in this paper
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
 
 <a name="pad-tarining"/></a>
-## Training of Iris PAD Models with Synthetic Data Only
+### Training of Iris PAD Models with Synthetic Data Only
 
 To train the models and validate it on your validation data during the the training, run the below code 
 
@@ -82,7 +82,7 @@ The code processes cropped iris images both with and without contact lenses as i
 **Note:** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
 
 <a name="requirements"/></a>
-### Environments Requirements
+#### Environments Requirements
 To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
 
 ```conda create —name dNetPAD```
@@ -100,7 +100,7 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 ___________________________________________________________________________________________
 
 <a name="pad-testing"/></a>
-## Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
+### Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
 To test your data on our pre-trained PAD model, first download the models from [Pre-trained PAD Models](https://notredame.app.box.com/folder/278643866297).
 
 After downloading the trained models, run the code below on your dataset to evaluate the models' performance on unseen data.
