@@ -14,7 +14,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
-* [Step4: Testing of Iris PAD Models with Unseen Authentic Data](#pad-testing)
+* [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
   * [Weight Acquisition](#PAD-weights)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
@@ -75,7 +75,7 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 
 
 
-## Training and Testing
+## Training PAD Models
 To train the models and validate it on your validation data during the the training, run the below code
 
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
@@ -88,9 +88,12 @@ The format of the dataset CSV file is as below:
 
 
 <a name="pad-testing"/></a>
-## Step4: Testing of Iris PAD Models with Unseen Authentic Data
+## Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
+<a name="PAD-weights"/></a>
 
-## Evaluating the Models Used in the Paper
+### Weight Acquisition(#PAD-weights)
+Download our best pre-trained model from [Models](https://notredame.app.box.com/folder/278643866297).
+
 After training the models, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
@@ -111,4 +114,4 @@ ________________________________________________________________________________
 
 The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
 
-Download our best pre-trained model from [Models](https://notredame.app.box.com/folder/278643866297).
+
