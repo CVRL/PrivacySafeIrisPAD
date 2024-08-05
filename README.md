@@ -11,8 +11,8 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Source Code for StyleGAN Models](#gan-code)
 * [Steps for Image Synthesis](#gan-synthesizing)
     * [Trained StyleGAN Model Weights](#gan-weights)
-    * [Generating Samples](#gan-samples)
-* [Accessing Synthetic Iris Images](#samples)
+    * [Generating Synthetic Iris Samples](#gan-samples)
+* [Accessing Synthetic Iris Samples (used in this paper)](#samples)
 * [Training Iris PAD Models with Synthetic Data](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Testing Iris PAD Models with Unseen Data](#pad-testing)
@@ -48,7 +48,7 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 - Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
-#### Generating Samples
+#### Generating Synthetic Iris Samples
 After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
 For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
@@ -58,7 +58,7 @@ For example, to generate samples from the first class condition of TCL irises, u
 ___________________________________________________________________________________________
 
 <a name="samples"/></a>
-### Accessing Synthetic Iris Images
+### Accessing Synthetic Iris Samples (used in this paper)
 
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
