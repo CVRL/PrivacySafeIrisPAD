@@ -13,7 +13,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
-    
+    * [Obtaining Synthetic Iris Images Used in this paper](#samples)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
@@ -53,21 +53,15 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, please 
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
-
 Run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-AD](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main)
 
 <a name="id-leakage"/></a>
 ### Identity Leakage Mitigation
+Neurotechnology's [VeriEye] (https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
 
-
-
-
-
-
-
-  
-
-**Note:** Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+<a name="samples"/></a>
+### Obtaining Synthetic Iris Images Used in this paper]
+Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
 
