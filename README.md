@@ -27,7 +27,6 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 
 <a name="gan-code"/></a>
 ## Source Codes of Unconditional and Conditional StyleGAN model
-* [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
 
 We used “Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step 3), respectively. 
 
