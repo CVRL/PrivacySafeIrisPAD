@@ -39,7 +39,7 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 
 
 ## Training and Testing
-To train the models and validate it on your test data run the below code
+To train the models and validate it on your validation data during the the training, run the below code
 
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
 
