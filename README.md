@@ -49,7 +49,7 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 
 <a name="gan-samples"/></a>
 #### Generating Samples
-After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
+After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
 For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
 
@@ -59,6 +59,7 @@ ________________________________________________________________________________
 
 <a name="samples"/></a>
 ### Accessing Synthetic Iris Images
+
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
