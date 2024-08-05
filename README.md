@@ -50,14 +50,13 @@ The format of the dataset CSV file is as below:
 <br>test,tcl,image4.png
 
 ## Evaluating the Models Used in the Paper
-After training the model, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
+After training the models, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
 
 A CSV file containing PA scores will be generated in the same folder as the images.
 
 ___________________________________________________________________________________________
-
 
 
 The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
