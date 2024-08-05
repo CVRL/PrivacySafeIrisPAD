@@ -10,9 +10,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
-    * [Weight Acquisition](#gan-weights)
     * [Synthetic Samples Acquisition](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
+    * [Weight Acquisition](#gan-weights)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
@@ -41,6 +41,14 @@ ________________________________________________________________________________
 <a name="gan-synthesizing"/></a>
 ## Step2: Image Synthesis and Identity Leakage Mitigation]
 
+
+<a name="gan-samples"/></a>
+### Synthetic Samples Acquisition
+
+<a name="id-leakage"/></a>
+### Identity Leakage Mitigation
+
+
 <a name="gan-weights"/></a>
 ### Weight Acquisition
 
@@ -48,13 +56,7 @@ ________________________________________________________________________________
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
 
-<a name="gan-samples"/></a>
-### Synthetic Samples Acquisition](#gan-samples)
-
-* [Identity Leakage Mitigation](#id-leakage)
-
-**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
-
+**Note:** Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
 
