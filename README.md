@@ -13,7 +13,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
-    * [Weight Acquisition](#gan-weights)
+    
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
@@ -37,7 +37,7 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 <a name="data-prpration"/></a>
 ### Data Prepration
 
-We organized iris samples from seven different contact lens brands into separate folders labeled from 1 to 7, representing each brand. Then, we ran [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.p) to prepare a zip file containing the TCL samples for the conditional GAN model's training set..
+We organized iris samples from seven different contact lens brands into separate folders labeled from 1 to 7, representing seven brands. Then, we ran [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.p) to prepare a zip file containing the TCL samples for the conditional GAN model's training set..
 
 
 ___________________________________________________________________________________________
@@ -45,24 +45,27 @@ ________________________________________________________________________________
 <a name="gan-synthesizing"/></a>
 ## Step2: Image Synthesis and Identity Leakage Mitigation]
 
-
-<a name="gan-samples"/></a>
-### Image Synthesis
-
-<a name="id-leakage"/></a>
-### Identity Leakage Mitigation
-
-
-<a name="gan-weights"/></a>
-### Weight Acquisition
-
-In order to generated noTCL and TCL samples using our pre-traind StyleGAN models please download the weight from below:
+To generate noTCL and TCL samples using our pre-trained StyleGAN models, please download the weights from the links below:
 
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN](https://notredame.app.box.com/folder/278643866297).
 
-  Then run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py).
+<a name="gan-samples"/></a>
+### Image Synthesis
+
+Then, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py).
+
+<a name="id-leakage"/></a>
+### Identity Leakage Mitigation
+
+
+
+
+
+
+
+  
 
 **Note:** Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
