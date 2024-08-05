@@ -10,7 +10,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Abstract](#abstract)
 * [Source Codes of Unconditional and Conditional StyleGAN models](#gan-code)
 * [Steps for Image Synthesis](#gan-synthesizing)
-    * [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
+    * [Trained StyleGAN Model Weights](#gan-weights)
     * [Generating Samples](#gan-samples)
 * [Obtaining Synthetic Iris Images Used in this paper](#samples)
 * [Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
@@ -40,13 +40,13 @@ ________________________________________________________________________________
 ### Steps for Image Synthesis
 
 <a name="gan-weights"/></a>
-#### Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
+#### Trained StyleGAN Model Weights
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
 
-- Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
-- Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
 #### Generating Samples
