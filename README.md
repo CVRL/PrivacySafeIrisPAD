@@ -9,6 +9,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
+   * [Data Prepration](#data-prpration)
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
@@ -33,7 +34,10 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
-https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py
+<a name="data-prpration"/></a>
+### Data Prepration
+
+We put iris samples of each contact lens brands in seperate folder labeling them from 1 to 7 indicating 7 contact lens brand and run [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.p) to prapare the zip file containing the training set for GAN model.
 
 
 ___________________________________________________________________________________________
