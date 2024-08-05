@@ -37,7 +37,9 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 ```conda install -c anaconda pillow``` 
 
 
-## Training
+
+## Training and Testing
+To train the models and validate it on your test data run the below code
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
 
 The format of the dataset CSV file is as below:
@@ -46,7 +48,7 @@ The format of the dataset CSV file is as below:
 <br>test,notcl,image3.png
 <br>test,tcl,image4.png
 
-## Testing
+## Evaluating the Models Used in the Paper
 After training the model, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
