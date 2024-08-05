@@ -12,11 +12,10 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
     * [Image Synthesis](#gan-samples)
-    * [Identity Leakage Mitigation](#id-leakage)
-    * [Obtaining Synthetic Iris Images Used in this paper](#samples)
-* [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
+* [Obtaining Synthetic Iris Images Used in this paper](#samples)
+* [Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
-* [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
+* [Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
@@ -51,24 +50,22 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
-After downloading the weight, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-AD](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
+After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
 For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
 
 ```python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1``` 
   
-<a name="id-leakage"/></a>
-### Identity Leakage Mitigation
-Neurotechnology’s VeriEye SDK [VeriEye](https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
+___________________________________________________________________________________________
 
 <a name="samples"/></a>
-### Obtaining Synthetic Iris Images Used in this paper
+## Obtaining Synthetic Iris Images Used in this paper
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
 
 <a name="pad-tarining"/></a>
-## Step3: Training of Iris PAD Models with Synthetic Data Only
+## Training of Iris PAD Models with Synthetic Data Only
 
 To train the models and validate it on your validation data during the the training, run the below code 
 
