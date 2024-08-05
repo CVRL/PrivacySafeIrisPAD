@@ -1,8 +1,6 @@
-
-# <center> Privacy-Safe Iris Presentation Attack Detection </center> #
-<center>
+# Privacy-Safe Iris Presentation Attack Detection #
 Official GitHub repository of the paper: Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka, "Privacy-Safe Iris Presentation Attack Detection," [IJCB](https://ijcb2024.ieee-biometrics.org), Buffalo, NY, September 15-18, 2024
-</center>
+<br>
 
 ![pipiline](https://github.com/CVRL/PrivacySafeIrisPAD/blob/main/pipiline.png)
 
