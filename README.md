@@ -117,7 +117,7 @@ ________________________________________________________________________________
 Research paper summarizing the paper:
 ```
 @Article{Privacy-Safe IPAD,
-  author    = {Siamul Karim Khan and Patrick J. Flynn and Adam Czajka},
+  author    = {Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka},
   journal   = {...},
   title     = {{Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka}},
   year      = {2024},
