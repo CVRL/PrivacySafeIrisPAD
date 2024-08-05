@@ -60,4 +60,3 @@ ________________________________________________________________________________
 The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
 
 Download our best pre-trained model from [Models](https://notredame.app.box.com/folder/278643866297).
-](https://notredame.app.box.com/folder/278643866297)
