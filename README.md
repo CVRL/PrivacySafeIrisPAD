@@ -10,8 +10,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
    * [Weight Acquisition](#gan-weights)
-   * [Synthetic Samples Acquisition](#gan-samples)
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+    * [Synthetic Samples Acquisition](#gan-samples)
+    * [Identity Leakage Mitigation](#id-leakage)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
@@ -42,15 +43,20 @@ https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
 
-
+___________________________________________________________________________________________
 
 <a name="gan-synthesizing"/></a>
 ## Step2: Image Synthesis and Identity Leakage Mitigation]
 
+<a name="gan-samples"/></a>
+### Synthetic Samples Acquisition](#gan-samples)
 
+* [Identity Leakage Mitigation](#id-leakage)
 
 **Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
+
+___________________________________________________________________________________________
 
 <a name="pad-tarining"/></a>
 ## Step3: Training of Iris PAD Models with Synthetic Data Only
@@ -86,6 +92,7 @@ The format of the dataset CSV file is as below:
 <br>test,notcl,image3.png
 <br>test,tcl,image4.png
 
+___________________________________________________________________________________________
 
 <a name="pad-testing"/></a>
 ## Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
@@ -100,12 +107,14 @@ After training the models, select the one with the highest accuracy on the valid
 
 A CSV file containing PA scores will be generated in the same folder as the images.
 
+___________________________________________________________________________________________
 
 <a name="citation"/></a>
 ### Citation
 
 Research paper summarizing the paper:
 
+___________________________________________________________________________________________
 
 <a name="acknowledgment"/></a>
 ### Acknowledgment
