@@ -10,7 +10,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
-    * [Synthetic Samples Acquisition](#gan-samples)
+    * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
     * [Weight Acquisition](#gan-weights)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
@@ -43,7 +43,7 @@ ________________________________________________________________________________
 
 
 <a name="gan-samples"/></a>
-### Synthetic Samples Acquisition
+### Image Synthesis
 
 <a name="id-leakage"/></a>
 ### Identity Leakage Mitigation
@@ -52,9 +52,13 @@ ________________________________________________________________________________
 <a name="gan-weights"/></a>
 ### Weight Acquisition
 
+In order to generated noTCL and TCL samples using our pre-traind StyleGAN models please download the weight from below:
+
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
+
+  Then run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py).
 
 **Note:** Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
