@@ -8,8 +8,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 
 ## Table of contents
 * [Abstract](#abstract)
-* [source codes and weights of unconditional and conditional StyleGAN2-ADA models](#gan-weights)
-* [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+* [Source Codes of Unconditional and Conditional StyleGAN models](#gan-code)
+* [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
+* [Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
     * [Image Synthesis](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
     * [Obtaining Synthetic Iris Images Used in this paper](#samples)
@@ -24,8 +25,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid ``identity leakage,'' the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 
-<a name="gan-weights"/></a>
-## source codes and weights of unconditional and conditional StyleGAN2-ADA models
+<a name="gan-code"/></a>
+## Source Codes of Unconditional and Conditional StyleGAN model
+* [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
 
 We used “Authentic TCL” and “Authentic noTCL” collections, *ND3D*, *ND Cosmetic Contacts*, and *BXGRID* datasets published by the University of Notre Dame, to train generative models synthesizing Synthetic TCL and Synthetic noTCL samples (used later in Step 3), respectively. 
 
@@ -40,17 +42,20 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 
 We organized iris samples from seven different contact lens brands into separate folders labeled from 1 to 7, representing seven brands. Then, we ran [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py) to prepare a zip file containing the TCL samples for the conditional GAN model's training set..
 
+<a name="gan-weights"/></a>
+## Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
 
-___________________________________________________________________________________________
-
-<a name="gan-synthesizing"/></a>
-## Step2: Image Synthesis and Identity Leakage Mitigation
-
-To generate noTCL and TCL samples using our pre-trained StyleGAN models, please download the weights from the links below:
+To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
 
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+___________________________________________________________________________________________
+
+<a name="gan-synthesizing"/></a>
+## Image Synthesis and Identity Leakage Mitigation
+
+
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
