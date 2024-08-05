@@ -115,7 +115,7 @@ ________________________________________________________________________________
 ### Citation
 
 Research paper summarizing the paper:
-
+```
 @Article{Privacy-Safe IPAD,
   author    = {Siamul Karim Khan and Patrick J. Flynn and Adam Czajka},
   journal   = {...},
@@ -131,6 +131,7 @@ Research paper summarizing the paper:
   keywords  = {iris pad;genrative models},
   publisher = {...},
 }
+```
 
 ___________________________________________________________________________________________
 
