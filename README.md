@@ -16,7 +16,7 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
-
+**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 # Description on How to Use PAD Code
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
@@ -54,7 +54,7 @@ After training the model, select the one with the highest accuracy on the valida
 A CSV file containing PA scores will be generated in the same folder as the images.
 
 ___________________________________________________________________________________________
-**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+
 
 
 The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
