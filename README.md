@@ -29,7 +29,9 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 
 To train generative models for synthesizing synthetic TCL and noTCL samples, we used code from NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) and [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) repositories, specifically utilizing the StyleGAN2 and StyleGAN2-ADA configurations.
 
-We employed a class-conditional [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) model to generate synthetic TCL iris samples, defining a separate class for each textured contact lens brand. For synthetic noTCL iris images, we used an unconditional [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) model."
+- We employed a class-conditional [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) model to generate synthetic TCL iris samples, defining a separate class for each textured contact lens brand.
+  
+- For synthetic noTCL iris images, we used an unconditional [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) model."
 
 ___________________________________________________________________________________________
 
