@@ -47,9 +47,9 @@ ________________________________________________________________________________
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, please download the weights from the links below:
 
-- Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples [noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
+- Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
 
-- Pre-trained StyleGAN Model Trained on the Authentic TCL samples [TCL GAN](https://notredame.app.box.com/folder/278643866297).
+- Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/folder/278643866297).
 
 <a name="gan-samples"/></a>
 ### Image Synthesis
