@@ -17,7 +17,6 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
-  * [Weight Acquisition](#PAD-weights)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
