@@ -12,7 +12,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Steps for Image Synthesis](#gan-synthesizing)
     * [Trained StyleGAN Model Weights](#gan-weights)
     * [Generating Samples](#gan-samples)
-* [Obtaining Synthetic Iris Images Used in this paper](#samples)
+* [Accessing Synthetic Iris Images](#samples)
 * [Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
 * [Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
@@ -58,7 +58,7 @@ For example, to generate samples from the first class condition of TCL irises, u
 ___________________________________________________________________________________________
 
 <a name="samples"/></a>
-### Obtaining Synthetic Iris Images Used in this paper
+### Accessing Synthetic Iris Images
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
