@@ -116,6 +116,22 @@ ________________________________________________________________________________
 
 Research paper summarizing the paper:
 
+@Article{Privacy-Safe IPAD,
+  author    = {Siamul Karim Khan and Patrick J. Flynn and Adam Czajka},
+  journal   = {...},
+  title     = {{Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka}},
+  year      = {2024},
+  issn      = {...},
+  month     = {...},
+  number    = {...},
+  pages     = {...},
+  volume    = {...},
+  abstract  = {...},
+  doi       = {...},
+  keywords  = {iris pad;genrative models},
+  publisher = {...},
+}
+
 ___________________________________________________________________________________________
 
 <a name="acknowledgment"/></a>
