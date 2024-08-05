@@ -56,7 +56,7 @@ In order to generated noTCL and TCL samples using our pre-traind StyleGAN models
 
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
 
-- Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
+- Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN](https://notredame.app.box.com/folder/278643866297).
 
   Then run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py).
 
