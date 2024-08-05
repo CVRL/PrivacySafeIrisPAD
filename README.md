@@ -42,8 +42,6 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
 
 
-<a name="gan-samples"/></a>
-### Synthetic Samples Acquisition
 
 <a name="gan-synthesizing"/></a>
 ## Step2: Image Synthesis and Identity Leakage Mitigation]
