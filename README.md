@@ -9,7 +9,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Code for StyleGAN Models](#gan-code)
-* [Steps for Image Synthesis](#gan-synthesizing)
+* [Steps for Iris Synthesis](#gan-synthesizing)
     * [Trained StyleGAN Model Weights](#gan-weights)
     * [Generating Synthetic Iris Samples](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
@@ -36,7 +36,7 @@ To train generative models for synthesizing synthetic TCL and noTCL samples, we 
 ___________________________________________________________________________________________
 
 <a name="gan-synthesizing"/></a>
-### Steps for Image Synthesis
+### Steps for Iris Synthesis
 
 <a name="gan-weights"/></a>
 #### Trained StyleGAN Model Weights
