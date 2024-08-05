@@ -37,7 +37,7 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 <a name="data-prpration"/></a>
 ### Data Prepration
 
-We put iris samples of each contact lens brands in seperate folder labeling them from 1 to 7 indicating 7 contact lens brand and run [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.p) to prapare the zip file containing the training set for GAN model.
+We organized iris samples from seven different contact lens brands into separate folders labeled from 1 to 7, representing each brand. Then, we ran [dataset_tool](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.p) to prepare a zip file containing the TCL samples for the conditional GAN model's training set..
 
 
 ___________________________________________________________________________________________
