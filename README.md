@@ -49,7 +49,7 @@ The format of the dataset CSV file is as below:
 <br>test,tcl,image4.png
 
 ## Evaluating the Models Used in the Paper
-After training the model, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data
+After training the model, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
 
