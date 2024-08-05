@@ -32,7 +32,8 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 
 Please refer to Table 1, cited in the paper, for more information on train and test datasets.
 
-**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py
+
 
 <a name="gan-weights"/></a>
 ### Weight Acquisition
@@ -48,8 +49,7 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 
 
 
-* [Step4: Testing of Iris PAD Models with Unseen Authentic Data](#pad-testing)
-  * [Weight Acquisition](#PAD-weights)
+**Note:** Instructions of how to request a copy of the synthetic iris dataset can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 
 <a name="pad-tarining"/></a>
