@@ -57,11 +57,11 @@ Run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pyt
 
 <a name="id-leakage"/></a>
 ### Identity Leakage Mitigation
-Neurotechnology's [VeriEye] (https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
+Neurotechnology’s VeriEye SDK [VeriEye](https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
 
 <a name="samples"/></a>
 ### Obtaining Synthetic Iris Images Used in this paper
-Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
 
