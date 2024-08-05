@@ -9,8 +9,8 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
-   * [Weight Acquisition](#gan-weights)
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+    * [Weight Acquisition](#gan-weights)
     * [Synthetic Samples Acquisition](#gan-samples)
     * [Identity Leakage Mitigation](#id-leakage)
 * [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
@@ -36,17 +36,17 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/dataset_tool.py
 
 
+___________________________________________________________________________________________
+
+<a name="gan-synthesizing"/></a>
+## Step2: Image Synthesis and Identity Leakage Mitigation]
+
 <a name="gan-weights"/></a>
 ### Weight Acquisition
 
 - Pre-trained StyleGAN Model Trained on the Authentic noTCL Samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [noTCL GAN](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
 
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [TCL GAN] [Model](https://notredame.app.box.com/folder/278643866297).
-
-___________________________________________________________________________________________
-
-<a name="gan-synthesizing"/></a>
-## Step2: Image Synthesis and Identity Leakage Mitigation]
 
 <a name="gan-samples"/></a>
 ### Synthetic Samples Acquisition](#gan-samples)
