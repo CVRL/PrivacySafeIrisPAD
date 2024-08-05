@@ -13,9 +13,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
     * [Trained StyleGAN Model Weights](#gan-weights)
     * [Generating Samples](#gan-samples)
 * [Accessing Synthetic Iris Images](#samples)
-* [Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
+* [Training Iris PAD Models with Synthetic Data](#pad-tarining)
   * [Environments Requirements](#requirements)
-* [Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data](#pad-testing)
+* [Testing Iris PAD Models with Unseen Data](#pad-testing)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
@@ -64,9 +64,9 @@ Instructions on how to request a copy of the synthetic iris dataset used in this
 ___________________________________________________________________________________________
 
 <a name="pad-tarining"/></a>
-### Training of Iris PAD Models with Synthetic Data Only
+### Training Iris PAD Models with Synthetic Data
 
-To train the models and validate it on your validation data during the the training, run the below code 
+To train the PAD models run the below code 
 
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
 
@@ -99,7 +99,7 @@ To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a cond
 ___________________________________________________________________________________________
 
 <a name="pad-testing"/></a>
-### Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
+### Testing Iris PAD Models with Unseen Data
 To test your data on our pre-trained PAD model, first download the models from [Pre-trained PAD Models](https://notredame.app.box.com/folder/278643866297).
 
 After downloading the trained models, run the code below on your dataset to evaluate the models' performance on unseen data.
