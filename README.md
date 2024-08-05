@@ -43,7 +43,7 @@ We organized iris samples from seven different contact lens brands into separate
 ___________________________________________________________________________________________
 
 <a name="gan-synthesizing"/></a>
-## Step2: Image Synthesis and Identity Leakage Mitigation]
+## Step2: Image Synthesis and Identity Leakage Mitigation
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, please download the weights from the links below:
 
@@ -60,7 +60,7 @@ Run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pyt
 Neurotechnology's [VeriEye] (https://www.neurotechnology.com/verieye.html) was used for the leakage-related comparison experiments. 
 
 <a name="samples"/></a>
-### Obtaining Synthetic Iris Images Used in this paper]
+### Obtaining Synthetic Iris Images Used in this paper
 Instructions of how to request a copy of the synthetic iris dataset used in the paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
 
 ___________________________________________________________________________________________
