@@ -80,6 +80,8 @@ The format of the dataset CSV file is as below:
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
+**Note** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
+
 <a name="requirements"/></a>
 ### Environments Requirements
 To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
@@ -100,12 +102,9 @@ ________________________________________________________________________________
 
 <a name="pad-testing"/></a>
 ## Step4: Testing of Iris PAD Models Used in the Paper with Unseen Authentic Data
-<a name="PAD-weights"/></a>
+To test your data on our pre-trained PAD model, first download the models from [Pre-trained PAD Models](https://notredame.app.box.com/folder/278643866297).
 
-### Weight Acquisition(#PAD-weights)
-Download our best pre-trained model from [Models](https://notredame.app.box.com/folder/278643866297).
-
-After training the models, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
+After downloading the trained models, run the code below on your dataset to evaluate the models' performance on unseen data.
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results  resultPath -scoreFile "score.csv"```
 
@@ -122,9 +121,6 @@ ________________________________________________________________________________
 
 <a name="acknowledgment"/></a>
 ### Acknowledgment
-___________________________________________________________________________________________
-
-
-The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
-
+This material is based upon work partially supported by the National Science Foundation under Grant No. 2237880. Any opinions, findings, and conclusions
+or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
 
