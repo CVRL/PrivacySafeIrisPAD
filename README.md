@@ -54,7 +54,7 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, please 
 <a name="gan-samples"/></a>
 ### Image Synthesis
 
-Then, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py).
+Run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-AD](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main)
 
 <a name="id-leakage"/></a>
 ### Identity Leakage Mitigation
