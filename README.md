@@ -35,6 +35,11 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 <a name="gan-weights"/></a>
 ### Weight Acquisition
 
+- Live Samples: Download the weight for StyleGAN model trained on the authentic noTCL samples from [Model](https://notredame.box.com/s/lgdanm3tb16e1t3ear7n4glhxeci8a6r).
+
+- TCL Samples: Download the weight for StyleGAN model trained on the TCL samples [Model](https://notredame.app.box.com/folder/278643866297).
+
+
 <a name="gan-samples"/></a>
 ### Synthetic Samples Acquisition
 
