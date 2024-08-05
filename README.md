@@ -11,14 +11,11 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Step1: Training GAN Models on the Authentic Iris Samples](#gan-training)
    * [Weight Acquisition](#gan-weights)
    * [Synthetic Samples Acquisition](#gan-samples)
- 
 * [Step2: Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
-
-* [Training GAN Models on the Authentic Iris Samples](#gan-training)
-
-* [Training and Evaluating PAD Models](#pad-tarining)
-   * * [Weight Acquisition](#PAD-weights)
-    * [Environments Requirements](#requirements)
+* [Step3: Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
+  * [Environments Requirements](#requirements)
+* [Step4: Testing of Iris PAD Models with Unseen Authentic Data](#pad-testing)
+  * [Weight Acquisition](#PAD-weights)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
@@ -52,9 +49,13 @@ Please refer to Table 1, cited in the paper, for more information on train and t
 ## Step2: Image Synthesis and Identity Leakage Mitigation]
 
 
+
+* [Step4: Testing of Iris PAD Models with Unseen Authentic Data](#pad-testing)
+  * [Weight Acquisition](#PAD-weights)
+
+
 <a name="pad-tarining"/></a>
-## Training and Evaluating PAD Models
-### Description on How to Use PAD Code
+## Step3: Training of Iris PAD Models with Synthetic Data Only
 
 The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
 
@@ -86,6 +87,10 @@ The format of the dataset CSV file is as below:
 <br>train,tcl,image2.png
 <br>test,notcl,image3.png
 <br>test,tcl,image4.png
+
+
+<a name="pad-testing"/></a>
+## Step4: Testing of Iris PAD Models with Unseen Authentic Data
 
 ## Evaluating the Models Used in the Paper
 After training the models, select the one with the highest accuracy on the validation set to evaluate its performance on unseen data by running the below code
