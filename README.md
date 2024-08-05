@@ -9,9 +9,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Codes of Unconditional and Conditional StyleGAN models](#gan-code)
-* [Image Synthesis and Identity Leakage Mitigation](#gan-synthesizing)
+* [Steps for Image Synthesis](#gan-synthesizing)
     * [Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper](#gan-weights)
-    * [Image Synthesis](#gan-samples)
+    * [Generating Samples](#gan-samples)
 * [Obtaining Synthetic Iris Images Used in this paper](#samples)
 * [Training of Iris PAD Models with Synthetic Data Only](#pad-tarining)
   * [Environments Requirements](#requirements)
@@ -37,7 +37,7 @@ ________________________________________________________________________________
 
 
 <a name="gan-synthesizing"/></a>
-## Image Synthesis and Identity Leakage Mitigation
+## Steps for Image Synthesis
 
 <a name="gan-weights"/></a>
 ### Weights of Trained Unconditional and Conditional StyleGAN models Used in this Paper
@@ -49,7 +49,7 @@ To generate noTCL and TCL samples using our pre-trained StyleGAN models, first y
 - Pre-trained StyleGAN Model Trained on the Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
-### Image Synthesis
+### Generating Samples
 After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) in order to generate synthetic noTCL and TCL iris samples using our pre-trained models. Please refer to StyleGAN2-AD github repo for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 
 For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
