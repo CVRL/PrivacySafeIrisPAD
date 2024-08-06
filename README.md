@@ -43,9 +43,9 @@ ________________________________________________________________________________
 
 To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
 
-- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN Weights](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
-- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN Weights](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
 #### Generating Synthetic Iris Samples
