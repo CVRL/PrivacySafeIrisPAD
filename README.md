@@ -119,7 +119,7 @@ Research paper summarizing the paper:
 @Article{Privacy-Safe IPAD,
   author    = {Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka},
   journal   = {...},
-  title     = {{Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka}},
+  title     = {Privacy-Safe Iris Presentation Attack Detection},
   year      = {2024},
   issn      = {...},
   month     = {...},
