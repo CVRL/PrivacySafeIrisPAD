@@ -1,5 +1,5 @@
 # Privacy-Safe Iris Presentation Attack Detection #
-Official GitHub repository of the paper: Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka, "Privacy-Safe Iris Presentation Attack Detection,"
+Official GitHub repository of the paper
 
 ![pipiline](https://github.com/CVRL/PrivacySafeIrisPAD/blob/main/pipiline.png)
 
