@@ -19,7 +19,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ### Abstract
 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid *identity leakage*, the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
-
+___________________________________________________________________________________________
 <a name="gan-code"/></a>
 #### Source Code and Weight for StyleGAN Models
 
@@ -28,8 +28,6 @@ NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was us
 NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize noTCL iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 ___________________________________________________________________________________________
-
-
 <a name="gan-samples"/></a>
 #### Generating Synthetic Iris Samples (using our trained StyleGAN Models
 After downloading the weights, use this [code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
@@ -40,16 +38,12 @@ The example code below uses the pre-trained model *network-snapshot-conditional-
 
 
 Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
-  
 ___________________________________________________________________________________________
-
 <a name="samples"/></a>
 ### Accessing Synthetic Iris Samples (used in this paper)
 
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
-
 ___________________________________________________________________________________________
-
 <a name="pad-tarining-evaluating"/></a>
 ### Training and Evaluating Iris PAD Models with Synthetic Data
 
@@ -63,10 +57,7 @@ After training your model models, use the code below to evaluate the models' per
 
 
 **Note:** The PAD code was adapted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original. We modified the code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
-
-
 ___________________________________________________________________________________________
-
 <a name="citation"/></a>
 ### Citation
 
