@@ -11,9 +11,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 * [Source Code and Weights for StyleGAN Models](#gan-code)
 * [Generating Synthetic Iris Samples](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
-* [Training Iris PAD Models with Synthetic Data](#pad-tarining)
-  * [Environments Requirements](#requirements)
-* [Testing Iris PAD Models with Unseen Data](#pad-testing)
+* [Training and Evaluating Iris PAD Models with Synthetic Data](#pad-tarining-evaluating)
 * [Citation](#citation)
 * [Acknowledgment](#acknowledgment)
 
@@ -52,50 +50,20 @@ Instructions on how to request a copy of the synthetic iris dataset used in this
 
 ___________________________________________________________________________________________
 
-<a name="pad-tarining"/></a>
-### Training Iris PAD Models with Synthetic Data
+<a name="pad-tarining-evaluating"/></a>
+### Training and Evaluating Iris PAD Models with Synthetic Data
 
-To train the PAD models run the below code 
+To train the PAD models using the synethtic sample run the below code 
 
 ```python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath```
 
-The format of the dataset CSV file is as below:
-<br>train,notcl,image1.png
-<br>train,tcl,image2.png
-<br>test,notcl,image3.png
-<br>test,tcl,image4.png
-
-The code processes cropped iris images both with and without contact lenses as input, generating a PA score ranging from 0 to 1. A score of 0 indicates the sample without a contact lens, while a score of 1 signifies the sample with a contact lens.
-
-**Note:** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master).
-
-<a name="requirements"/></a>
-#### Environments Requirements
-To run the code you need to install Pytorch, Numpy, Scipy, Pillow. Create a conda environment as below: 
-
-```conda create —name dNetPAD```
-
-```conda activate dNetPAD```
-
-```conda install pytorch torchvision -c pytorch```
-
-```conda install -c anaconda numpy``` 
-
-```conda install -c anaconda scipy```
-
-```conda install -c anaconda pillow``` 
-
-___________________________________________________________________________________________
-
-<a name="pad-testing"/></a>
-### Testing Iris PAD Models with Unseen Data
-To test your data on our pre-trained PAD model, first download the models from [Pre-trained PAD Models](https://notredame.app.box.com/folder/278643866297).
-
-After downloading the trained models, run the code below on your dataset to evaluate the models' performance on unseen data.
+After training your model models, use the code below to evaluate the models' performance on unseen data.
 
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"```
 
-A CSV file containing PA scores will be generated in the same folder as the images.
+
+**Note:** The PAD code was adopted from [DeNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master) and please refer to this repo for more information about environment and how to prepare your train and test sets. 
+
 
 ___________________________________________________________________________________________
 
