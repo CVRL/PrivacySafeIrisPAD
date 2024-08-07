@@ -8,9 +8,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 
 ## Table of contents
 * [Abstract](#abstract)
-* [Source Code for StyleGAN Models](#gan-code)
-* [Steps for Iris Synthesis](#gan-synthesizing)
-    * [Trained StyleGAN Model Weights](#gan-weights)
+* [Source Code and Weights for StyleGAN Models](#gan-code)
+<!---[Steps for Iris Synthesis](#gan-synthesizing)-->
+    
     * [Generating Synthetic Iris Samples](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
 * [Training Iris PAD Models with Synthetic Data](#pad-tarining)
@@ -33,19 +33,23 @@ To train generative models for synthesizing synthetic TCL and noTCL samples, we 
   
 - For synthetic noTCL iris images, we used an unconditional [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) model."
 
+  * [Trained StyleGAN Model Weights](#gan-weights)
+ 
+<a name="gan-weights"/></a>
+#### Trained StyleGAN Model Weights
+
+Download the pre-trained StyleGAN models weights trained on noTCL and TCL samples using the links below:
+
+- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN Weights](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+
+- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN Weights](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+
 ___________________________________________________________________________________________
 
 <a name="gan-synthesizing"/></a>
 ### Steps for Iris Synthesis
 
-<a name="gan-weights"/></a>
-#### Trained StyleGAN Model Weights
 
-To generate noTCL and TCL samples using our pre-trained StyleGAN models, first you need to download the weights from the links below:
-
-- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN Weights](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
-
-- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN Weights](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 <a name="gan-samples"/></a>
 #### Generating Synthetic Iris Samples
