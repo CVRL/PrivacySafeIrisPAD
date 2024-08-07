@@ -36,9 +36,7 @@ ________________________________________________________________________________
 #### Generating Synthetic Iris Samples
 After downloading the weights, use this [code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
 
-To generate TCL iris images for different contact lens brands, you can use the following example code. Adjust the class argument from 1 to 7 to specify the desired lens brand. For noTCL samples, the class argument is not needed.
-
-This example code below uses the pre-trained model network-snapshot-conditional-025000.pkl to generate 1,000 synthetic TCL iris images, saving them to the /generated_samples/condition1 directory. Adjust the --class argument from 1 to 7 to generate samples for different contact lens brands.
+The example code below uses the pre-trained model *network-snapshot-conditional-025000.pkl* to generate 1,000 synthetic TCL iris images, saving them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples for different contact lens brands.
 
 ```python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1``` 
 
