@@ -65,7 +65,7 @@ Research paper summarizing the paper:
 ```
 @misc{mitcheff2024privacysafeirispresentationattack,
       title={Privacy-Safe Iris Presentation Attack Detection}, 
-      author={Mahsa Mitcheff and Patrick Tinsley and Adam Czajka},
+      author={Mahsa Mitcheff, Patrick Tinsley and Adam Czajka},
       year={2024},
       eprint={2408.02750},
       archivePrefix={arXiv},
