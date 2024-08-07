@@ -26,22 +26,21 @@ This project proposes a framework for a privacy-safe iris presentation attack de
 <a name="gan-code"/></a>
 #### Source Code for StyleGAN Models
 
-We used code from NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) and [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) repositories, specifically utilizing the StyleGAN2 and StyleGAN2-ADA configurations to synthesize synthetic TCL and noTCL samples
+We used code from NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) and [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) repositories to synthesize synthetic TCL and noTCL samples
 
 - We employed a class-conditional [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) model to generate synthetic TCL iris samples, defining a separate class for each textured contact lens brand.
   
 - For synthetic noTCL iris images, we used an unconditional [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) model."
 
-  * [Trained StyleGAN Model Weights](#gan-weights)
  
 <a name="gan-weights"/></a>
-#### StyleGAN Model Weights (used in this paper)
+#### Trained StyleGAN Model Weights (used in this paper)
 
 Download the pre-trained StyleGAN models weights trained on noTCL and TCL samples using the links below:
 
-- Pre-trained StyleGAN Model Weights for Authentic noTCL Samples [Pre-trained noTCL GAN Weights](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+- [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
-- Pre-trained StyleGAN Model Weights for Authentic TCL samples [Pre-trained TCL GAN Weights](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+- [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 ___________________________________________________________________________________________
 
