@@ -9,7 +9,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Code and Weights for StyleGAN Models](#gan-code)
-* [Generating Synthetic Iris Samples (using our trained StyleGAN Models](#gan-samples)
+* [Generating Synthetic Iris Samples (using our trained StyleGAN Models)](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
 * [Training and Evaluating Iris PAD Models with Synthetic Data](#pad-tarining-evaluating)
 * [Citation](#citation)
