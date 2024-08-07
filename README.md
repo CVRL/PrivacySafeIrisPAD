@@ -1,5 +1,5 @@
 # Privacy-Safe Iris Presentation Attack Detection #
-Official GitHub repository of the paper
+Official GitHub repository of the [paper](https://arxiv.org/abs/2408.02750)
 
 ![pipiline](https://github.com/CVRL/PrivacySafeIrisPAD/blob/main/pipiline.png)
 
