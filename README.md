@@ -9,9 +9,8 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Code and Weights for StyleGAN Models](#gan-code)
-<!---[Steps for Iris Synthesis](#gan-synthesizing)-->
-    
-    * [Generating Synthetic Iris Samples](#gan-samples)
+* [StyleGAN Model Weights (used in this paper)](#gan-weights)    
+* [Generating Synthetic Iris Samples](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
 * [Training Iris PAD Models with Synthetic Data](#pad-tarining)
   * [Environments Requirements](#requirements)
@@ -25,9 +24,9 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid *identity leakage*, the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 
 <a name="gan-code"/></a>
-### Source Code for StyleGAN Models
+#### Source Code for StyleGAN Models
 
-To train generative models for synthesizing synthetic TCL and noTCL samples, we used code from NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) and [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) repositories, specifically utilizing the StyleGAN2 and StyleGAN2-ADA configurations.
+We used code from NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) and [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) repositories, specifically utilizing the StyleGAN2 and StyleGAN2-ADA configurations to synthesize synthetic TCL and noTCL samples
 
 - We employed a class-conditional [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) model to generate synthetic TCL iris samples, defining a separate class for each textured contact lens brand.
   
@@ -36,7 +35,7 @@ To train generative models for synthesizing synthetic TCL and noTCL samples, we 
   * [Trained StyleGAN Model Weights](#gan-weights)
  
 <a name="gan-weights"/></a>
-#### Trained StyleGAN Model Weights
+#### StyleGAN Model Weights (used in this paper)
 
 Download the pre-trained StyleGAN models weights trained on noTCL and TCL samples using the links below:
 
