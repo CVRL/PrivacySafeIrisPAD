@@ -63,20 +63,14 @@ ________________________________________________________________________________
 
 Research paper summarizing the paper:
 ```
-@Article{Privacy-Safe IPAD,
-  author    = {Mahsa Mitcheff, Patrick Tinsley, and Adam Czajka},
-  journal   = {...},
-  title     = {Privacy-Safe Iris Presentation Attack Detection},
-  year      = {2024},
-  issn      = {...},
-  month     = {...},
-  number    = {...},
-  pages     = {...},
-  volume    = {...},
-  abstract  = {...},
-  doi       = {...},
-  keywords  = {iris pad;genrative models},
-  publisher = {...},
+@misc{mitcheff2024privacysafeirispresentationattack,
+      title={Privacy-Safe Iris Presentation Attack Detection}, 
+      author={Mahsa Mitcheff and Patrick Tinsley and Adam Czajka},
+      year={2024},
+      eprint={2408.02750},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.02750}, 
 }
 ```
 
