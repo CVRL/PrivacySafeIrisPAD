@@ -23,9 +23,9 @@ ________________________________________________________________________________
 <a name="gan-code"/></a>
 ### Source Code and Weight for StyleGAN Models
 
-NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize TCL iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
 
-NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize noTCL iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
 
 ___________________________________________________________________________________________
 <a name="gan-samples"/></a>
