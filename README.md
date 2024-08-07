@@ -9,7 +9,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 ## Table of contents
 * [Abstract](#abstract)
 * [Source Code and Weights for StyleGAN Models](#gan-code)
-* [Generating Synthetic Iris Samples](#gan-samples)
+* [Generating Synthetic Iris Samples (using our trained StyleGAN Models](#gan-samples)
 * [Accessing Synthetic Iris Samples (used in this paper)](#samples)
 * [Training and Evaluating Iris PAD Models with Synthetic Data](#pad-tarining-evaluating)
 * [Citation](#citation)
@@ -31,7 +31,7 @@ ________________________________________________________________________________
 
 
 <a name="gan-samples"/></a>
-#### Generating Synthetic Iris Samples
+#### Generating Synthetic Iris Samples (using our trained StyleGAN Models
 After downloading the weights, use this [code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
 
 The example code below uses the pre-trained model *network-snapshot-conditional-025000.pkl* to generate 1,000 synthetic TCL iris images, saving them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples for different contact lens brands.
