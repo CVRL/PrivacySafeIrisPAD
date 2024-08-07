@@ -34,11 +34,14 @@ ________________________________________________________________________________
 
 <a name="gan-samples"/></a>
 #### Generating Synthetic Iris Samples
-After downloading the weights, run this code [generate GAN samples](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples using our pre-trained models. 
+After downloading the weights, use this [code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
 
-For example, to generate samples from the first class condition of TCL irises, use the code below. Adjust the class argument from 1 to 7 as needed. For noTCL, you do not need to set the class argument.
+To generate TCL iris images for different contact lens brands, you can use the following example code. Adjust the class argument from 1 to 7 to specify the desired lens brand. For noTCL samples, the class argument is not needed.
+
+This example code below uses the pre-trained model network-snapshot-conditional-025000.pkl to generate 1,000 synthetic TCL iris images, saving them to the /generated_samples/condition1 directory. Adjust the --class argument from 1 to 7 to generate samples for different contact lens brands.
 
 ```python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1``` 
+
 
 Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
   
