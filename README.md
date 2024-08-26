@@ -62,13 +62,14 @@ ________________________________________________________________________________
 
 Research paper summarizing the paper:
 ```
-@misc{mitcheff2024privacysafeirispresentationattack,
+@mInprocedding{mitcheff2024privacysafeirispresentationattack,
       title={Privacy-Safe Iris Presentation Attack Detection}, 
       author={Mahsa Mitcheff, Patrick Tinsley and Adam Czajka},
       year={2024},
       eprint={2408.02750},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
+      boolktitle={Proceding in IJCB},
       url={https://arxiv.org/abs/2408.02750}, 
 }
 ```
