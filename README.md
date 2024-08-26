@@ -55,7 +55,7 @@ After training your model models, use the code below to evaluate the models' per
 ```python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"```
 
 
-**Note:** The PAD code was adapted from [DNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original. We modified the code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
+**Note:** The PAD code was adapted from [DNetPAD](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original github repo. We modified the code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
 ___________________________________________________________________________________________
 <a name="citation"/></a>
 ### Citation
