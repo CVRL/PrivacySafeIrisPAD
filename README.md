@@ -66,7 +66,7 @@ Research paper summarizing the paper:
       title={Privacy-Safe Iris Presentation Attack Detection}, 
       author={Mahsa Mitcheff, Patrick Tinsley and Adam Czajka},
       year={2024},
-      boolktitle={Proceedings of the IJCB},
+      booktitle={IEEE International Joint Conference on Biometrics},
 }
 ```
 
