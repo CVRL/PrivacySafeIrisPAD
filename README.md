@@ -23,9 +23,9 @@ ________________________________________________________________________________
 <a name="gan-code"/></a>
 ### Source Codes and Weights for StyleGAN Models
 
-NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/oe1ez0hu3tn0x93meujlk7epsjsskfbp). 
+NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/l52ym2rgeii6volqeroqy2zb98d5juvm). 
 
-NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.app.box.com/file/1613090265358?s=v3kg037hy05luyui4a8emqrzqs1522k7).
+NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.box.com/s/ai6ta1ocfmb37bk6gxy9owvbsrndf2zz).
 
 ___________________________________________________________________________________________
 <a name="gan-samples"/></a>
@@ -42,7 +42,7 @@ ________________________________________________________________________________
 <a name="samples"/></a>
 ### Accessing Synthetic Iris Samples (used in this paper)
 
-Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [dataset](https://notredame.app.box.com/folder/258825225412).
+Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [the CVRL webpage](https://cvrl.nd.edu/projects/data/).
 ___________________________________________________________________________________________
 <a name="pad-tarining-evaluating"/></a>
 ### Training and Evaluating Iris PAD Models with Synthetic Data
