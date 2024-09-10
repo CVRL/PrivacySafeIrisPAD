@@ -46,15 +46,15 @@ ________________________________________________________________________________
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [the CVRL webpage](https://cvrl.nd.edu/projects/data/).
 ___________________________________________________________________________________________
 <a name="pad-tarining-evaluating"/></a>
-### Training and evaluating iris PAD models with synthetic data
+### Training and evaluating iris PAD models 
 
-To train the PAD models using the synethtic samples use the following command:
+To train the PAD models using the **synethtic samples** use the following command:
 
 ```
 python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath
 ```
 
-After training your model models, use the following command to evaluate the models' performance on unseen data:
+After training your model models, use the following command to evaluate the models' performance:
 
 ```
 python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"
