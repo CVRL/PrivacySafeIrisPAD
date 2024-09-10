@@ -23,9 +23,9 @@ ________________________________________________________________________________
 <a name="gan-code"/></a>
 ### Source codes and weights for StyleGAN models
 
-NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/l52ym2rgeii6volqeroqy2zb98d5juvm). 
+NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples (that is, irises with textured contact lenses) and the weights of our trained model are available at [this link](https://notredame.box.com/s/ai6ta1ocfmb37bk6gxy9owvbsrndf2zz). 
 
-NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic TCL Samples](https://notredame.box.com/s/ai6ta1ocfmb37bk6gxy9owvbsrndf2zz).
+NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples (that is, irises without contact lenses) and the weights of our trained model are available at [this link](https://notredame.box.com/s/l52ym2rgeii6volqeroqy2zb98d5juvm).
 
 ___________________________________________________________________________________________
 <a name="gan-samples"/></a>
