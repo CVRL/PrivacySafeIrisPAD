@@ -21,7 +21,7 @@ Overview of the pipeline of privacy-safe, synthetic data-only iris presentation 
 This project proposes a framework for a privacy-safe iris presentation attack detection (PAD) method, designed solely with synthetically-generated, identity-leakage-free iris images. Once trained, the method is evaluated in a classical way using state-of-the-art iris PAD benchmarks. We designed two generative models for the synthesis of ISO/IEC 19794-6-compliant iris images. The first model synthesizes bona fide-looking samples. To avoid *identity leakage*, the generated samples that accidentally matched those used in the model's training were excluded. The second model synthesizes images of irises with textured contact lenses and is conditioned by a given contact lens brand to have better control over textured contact lens appearance when forming the training set. Our experiments demonstrate that models trained solely on synthetic data achieve a lower but still reasonable performance when compared to solutions trained with iris images collected from human subjects. This is the first-of-its-kind attempt to use solely synthetic data to train a fully-functional iris PAD solution, and despite the performance gap between regular and the proposed methods, this study demonstrates that with the increasing fidelity of generative models, creating such privacy-safe iris PAD methods may be possible. The source codes and generative models trained for this work are offered along with the paper.
 ___________________________________________________________________________________________
 <a name="gan-code"/></a>
-### Source Codes and Weights for StyleGAN Models
+### Source codes and weights for StyleGAN models
 
 NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples and weights of our trained model can be downloaded from here [Trained StyleGAN Model Weights on Authentic noTCL Samples](https://notredame.box.com/s/l52ym2rgeii6volqeroqy2zb98d5juvm). 
 
@@ -29,7 +29,7 @@ NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was
 
 ___________________________________________________________________________________________
 <a name="gan-samples"/></a>
-### Generating Synthetic Iris Samples (using our trained StyleGAN models)
+### Generating synthetic iris samples (using our trained StyleGAN models)
 After downloading our StyleGAN2 weights, use this [code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
 
 The example code below uses the pre-trained model *network-snapshot-conditional-025000.pkl* to generate 1,000 synthetic TCL iris images, saving them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples for different contact lens brands.
@@ -40,12 +40,12 @@ The example code below uses the pre-trained model *network-snapshot-conditional-
 Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
 ___________________________________________________________________________________________
 <a name="samples"/></a>
-### Accessing Synthetic Iris Samples (used in this paper)
+### Dataset of synthetic iris samples used in this paper
 
 Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [the CVRL webpage](https://cvrl.nd.edu/projects/data/).
 ___________________________________________________________________________________________
 <a name="pad-tarining-evaluating"/></a>
-### Training and Evaluating Iris PAD Models with Synthetic Data
+### Training and evaluating iris PAD models with synthetic data
 
 To train the PAD models using the synethtic sample run the below code 
 
@@ -61,7 +61,7 @@ ________________________________________________________________________________
 <a name="citation"/></a>
 ### Citation
 
-Research paper summarizing the paper:
+If you find this work useful in your research, please cite the following paper:
 ```
 @inproceedings{mitcheff2024privacysafeirispresentationattack,
       title={Privacy-Safe Iris Presentation Attack Detection}, 
@@ -70,7 +70,6 @@ Research paper summarizing the paper:
       booktitle={IEEE International Joint Conference on Biometrics},
 }
 ```
-
 ___________________________________________________________________________________________
 
 <a name="acknowledgment"/></a>
