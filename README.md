@@ -35,7 +35,7 @@ After downloading our StyleGAN2 weights, use [NVIDIA's code](https://github.com/
 The example code below uses the pre-trained model *network-snapshot-conditional-025000.pkl* to generate 1,000 synthetic TCL iris images, and saves them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples representing different contact lens brands.
 
 ```
-      python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1 
+python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1 
 ```
 
 Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
@@ -51,13 +51,13 @@ ________________________________________________________________________________
 To train the PAD models using the synethtic samples use the following command:
 
 ```
-      python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath
+python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath
 ```
 
 After training your model models, use the following command to evaluate the models' performance on unseen data:
 
 ```
-      python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"
+python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"
 ```
 
 **Note:** The PAD model code was adapted from [DNetPAD GitHub repo](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original DNetPAD GitHub repo. For this paper, we modified the original DNetPAD code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
