@@ -60,7 +60,7 @@ After training your model models, use the following command to evaluate the mode
 python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"
 ```
 
-**Note:** The PAD model code was adapted from [DNetPAD GitHub repo](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original DNetPAD GitHub repo. For this paper, we modified the original DNetPAD code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
+**Note:** The PAD model code was adapted from [D-NetPAD GitHub repo](https://github.com/iPRoBe-lab/D-NetPAD/tree/master). For more information about the environment setup and how to prepare your training and test sets, please refer to the original D-NetPAD GitHub repo. For this paper, we modified the original D-NetPAD code to work with DenseNet, ResNet, and Vision Transformer (ViT) models, and included an augmentation pipeline in the data loader.
 ___________________________________________________________________________________________
 <a name="citation"/></a>
 ### Citation
