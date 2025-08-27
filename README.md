@@ -43,7 +43,7 @@ ________________________________________________________________________________
 <a name="samples"/></a>
 ### Dataset of synthetic iris samples used in this paper
 
-Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [the CVRL webpage](https://cvrl.nd.edu/projects/data/).
+Instructions on how to request a copy of the synthetic iris dataset used in this paper can be found at [the CVRL webpage](https://cvrl.nd.edu/projects/data/#nd-psipad-2024-dataset) (look for ND-PSIPAD-2024 dataset).
 ___________________________________________________________________________________________
 <a name="pad-tarining-evaluating"/></a>
 ### Training and evaluating iris PAD models 
