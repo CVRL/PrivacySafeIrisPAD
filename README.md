@@ -23,19 +23,19 @@ ________________________________________________________________________________
 <a name="gan-code"/></a>
 ### Source codes and weights for StyleGAN models
 
-NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples (that is, irises with textured contact lenses) and the weights of our trained model are available at [this link](https://notredame.box.com/s/1wed4pmuc3a737t5fd0xqyrybwfthjgb). 
+NVIDIA's [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch) was used to synthesize **TCL** iris samples (that is, irises with textured contact lenses) and the weights of our trained model are available at [this link](https://drive.google.com/drive/folders/1PDkDutmcc8FTID5EfVWzhhbQTwAZ9ldO?usp=share_link). 
 
-NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples (that is, irises without contact lenses) and the weights of our trained model are available at [this link](https://notredame.box.com/s/l52ym2rgeii6volqeroqy2zb98d5juvm).
+NVIDIA's [StylaGAN2](https://github.com/NVlabs/stylegan2?tab=readme-ov-file) was used to synthesize **noTCL** iris samples (that is, irises without contact lenses) and the weights of our trained model are available at [this link](https://drive.google.com/drive/folders/1jSyqKwBKnfBpR4dvSj4u7HwJS_yhOG5d?usp=share_link).
 
 ___________________________________________________________________________________________
 <a name="gan-samples"/></a>
 ### Generating synthetic iris samples (using our trained StyleGAN models)
 After downloading our StyleGAN2 weights, use [NVIDIA's code](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/generate.py) to generate synthetic noTCL and TCL iris samples with our pre-trained models. 
 
-The example code below uses the pre-trained model *network-TCL-025000.pk* to generate 1,000 synthetic TCL iris images, and saves them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples representing different contact lens brands.
+The example code below uses the pre-trained model *network-snapshot-conditional-025000.pkl* to generate 1,000 synthetic TCL iris images, and saves them to the */generated_samples/condition1* directory. Adjust the *--class* argument from 1 to 7 to generate samples representing different contact lens brands.
 
 ```
-python generate.py --network=network-TCL-025000.pk --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1 
+python generate.py --network=network-snapshot-conditional-025000.pkl --seeds=0-1000 --outdir=/generated_samples/condition1 --class=1 
 ```
 
 Please refer to NVIDIA's github repository for more information on how to use the code [StyleGAN2-ada](https://github.com/NVlabs/stylegan2-ada-pytorch/tree/main).
@@ -48,13 +48,15 @@ ________________________________________________________________________________
 <a name="pad-tarining-evaluating"/></a>
 ### Training and evaluating iris PAD models 
 
-To train the PAD models using the **synethtic samples** use the following command:
+We offer the weights of PAD models used in the paper and trained on **synthetic samples** ([this link](https://drive.google.com/drive/folders/1WIFra615laMDrNlC4u9SbCOfMXfPMGAg?usp=share_link)) and **authentic samples** ([this link](https://drive.google.com/drive/folders/1t_fCnHxT8zu0ROzmoGqZbiaCKIBnNatt?usp=share_link)).
+
+To train your own PAD models using the **synethtic samples** use the following command:
 
 ```
 python train.py -csvPath csvFilePath  -datasetPath datasetImagesPath -method modelName -outputPath resultPath
 ```
 
-After training your model models, use the following command to evaluate the models' performance:
+Use the following command to evaluate the models' performance:
 
 ```
 python test.py -csvPath csvFilePath -modelPath bestModelPth  -trainData "synthetic" -model modelName -results resultPath -scoreFile "score.csv"
